@@ -1,24 +1,13 @@
 package task_01;
 
-import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class ProductsSet {
-    protected Set<String> productsSet = new HashSet<>();
+    protected Set<String> productsSet;
 
     public ProductsSet(Set<String> setProducts) {
-    }
-
-    public String createSet() {
-
-        productsSet.add("р-Аминопропиофенон");
-        productsSet.add("Альфентанил");
-        productsSet.add("Глютетимид");
-        productsSet.add("Декстроморамид");
-        productsSet.add("Кодоксим");
-
-        return "\nПеречень товаров из 5-и наименований создан!\n";
+        this.productsSet = setProducts;
     }
 
     public String addProduct() {

@@ -7,6 +7,7 @@ import java.util.Set;
 public class ProductsSetExtendedVersion extends ProductsSet {
 
     public ProductsSetExtendedVersion(Set<String> setProducts) {
+
         super(setProducts);
     }
 
